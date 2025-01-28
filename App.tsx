@@ -7,6 +7,9 @@ import {
 import Basic from './src/components/Basic';
 import TextInputComponent from './src/components/TextInput';
 import ScrollViewComponent from './src/components/ScrollView';
+import StylingDemo from './src/components/Styling';
+import FlexLayout from './src/components/FlexLayout';
+import TouchableComponents from './src/components/Touchable';
 
 function App(): React.JSX.Element {
   return (
@@ -18,6 +21,9 @@ function App(): React.JSX.Element {
      <Basic />
      <TextInputComponent />
      <ScrollViewComponent />
+     <StylingDemo />
+     <FlexLayout />
+     <TouchableComponents />
      </ScrollView>
   </View>
 );

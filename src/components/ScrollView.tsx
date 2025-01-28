@@ -1,3 +1,4 @@
+import React from "react";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
 
 function ScrollViewComponent() {
@@ -7,9 +8,9 @@ function ScrollViewComponent() {
             <ScrollView 
               nestedScrollEnabled={true}
               showsVerticalScrollIndicator={true}
-             style={styles.scrollView}
-             contentContainerStyle={styles.scrollViewContent} 
-             bounces={true} 
+              style={styles.scrollView}
+              contentContainerStyle={styles.scrollViewContent} 
+              bounces={true} 
              >
                  {
                     [...Array(20)]?.map((_, index)=> 
@@ -20,33 +21,30 @@ function ScrollViewComponent() {
                  }
 
             </ScrollView>
-        
-        
-        
         </View>
     )
 }
 
 const styles = StyleSheet.create({
     container : {
-        marginBottom: 20
-    }, 
+        marginBottom: 20,
+    },
      headerText: {
-        fontSize: 20, 
-        fontWeight: 'bold', 
-        marginBottom: 20, 
-        marginTop: 20, 
+        fontSize: 20,
+        fontWeight: 'bold',
+        marginBottom: 20,
+        marginTop: 20,
         textDecorationLine: 'underline'
     },
     scrollView: {
-        height: 200, 
+        height: 200,
         backgroundColor: '#f0f0f0'
-    }, 
+    },
     scrollViewContent:{
-        padding: 20
-    }, 
+        padding: 20,
+    },
     box:{
-        height: 40, 
+        height: 40,
         marginBottom: 10,  
         backgroundColor: '#3498db', 
         justifyContent:'center', 
